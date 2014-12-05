@@ -246,8 +246,10 @@ test_Y = test_census_data['50K']
 trained_Y = clf.predict(test_X)
 
 # Compare predicted and actual values
-prediction = trained_Y==test_Y.values
-good_predictions = np.count_nonzero(prediction == True)
-bad_predictions = np.count_nonzero(prediction == False)
-goodness = good_predictions / float(good_predictions + bad_predictions)
-print goodness
+##prediction = trained_Y==test_Y.values
+##good_predictions = np.count_nonzero(prediction == True)
+##bad_predictions = np.count_nonzero(prediction == False)
+##goodness = good_predictions / float(good_predictions + bad_predictions)
+##print goodness
+from sklearn.metrics import confusion_matrix
+print confusion_matrix(test_Y.values, trained_Y)
