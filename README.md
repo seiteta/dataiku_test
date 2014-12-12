@@ -1,6 +1,6 @@
 Dataiku test
 ============
-Here is my code for the Dataiku interview. 
+This repo contains my Python code written for the interview with Dataiku. 
 
 This excercise was based on a US census dataset containing 42 anonymised information about approx. 300,000 persons. The goal was to predict whether or not these people earns more than 50k$ per year.
 
