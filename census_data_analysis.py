@@ -251,5 +251,8 @@ trained_Y = clf.predict(test_X)
 ##bad_predictions = np.count_nonzero(prediction == False)
 ##goodness = good_predictions / float(good_predictions + bad_predictions)
 ##print goodness
+##
+## NOTE : this predictor is not good for classification problems, better use a confusion matrix instead
+
 from sklearn.metrics import confusion_matrix
 print confusion_matrix(test_Y.values, trained_Y)
